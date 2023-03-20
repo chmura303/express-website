@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+
+  <body>
+    <header class="header flex">
+      <div class="logo flex ff-decorative fs-700 fw-700">
+        <a href="/">
+          <img src="./images/logo.png" alt="sonic hedgehog logo" />
+        </a>
+        <p class="logo-title">SonicHedgehog</p>
+      </div>
+
+      <%- include('./partials/nav.ejs') %>
+
+      <button
+        aria-expanded="false"
+        class="nav-toggle"
+        aria-label="Open the menu"
+      ></button>
+    </header>
+
+    <main class="main-grid">
+      <article class="zero article bg-light-200 text-dark-800">
+        <h1 class="fs-700">Contact us</h1>
+        <p class="subhead fw-700 fs-500">
+          Any question or remarks? Just write us a message!
+        </p>
+
+        <form id="contact-form">
+          <label for="contact-name">Name:</label>
+          <input
+            type="text"
+            name="contact-name"
+            class="contact"
+            id="contact-name"
+            placeholder="e.g. John Smith"
+            required=""
+          />
+
+          <label for="contact-email">Email:</label>
+          <input
+            type="email"
+            name="contact-email"
+            class="contact"
+            id="contact-email"
+            placeholder="e.g. johnsmith@gmail.com"
+            required=""
+          />
+
+          <label for="contact-phone">Phone:</label>
+          <input
+            type="tel"
+            name="contact-phone"
+            class="contact"
+            id="contact-phone"
+            placeholder="e.g. +44 908736194"
+            pattern="[0-9\-]*"
+            value=""
+          />
+
+          <label for="contact-message">Message:</label>
+          <textarea
+            name="message"
+            class="contact"
+            id="contact-message"
+            placeholder="What would you like to tell us about?"
+            required=""
+          ></textarea>
+
+          <div>
+            <input
+              class="btn btn-send-message fw-700"
+              type="submit"
+              value="Send Message"
+            />
+          </div>
+        </form>
+      </article>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

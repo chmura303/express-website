@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+
+  <body>
+    <header class="header flex">
+      <div class="logo flex ff-decorative fs-700 fw-700">
+        <a href="/">
+          <img src="./images/logo.png" alt="sonic hedgehog logo" />
+        </a>
+        <p class="logo-title">SonicHedgehog</p>
+      </div>
+
+      <%- include('./partials/nav.ejs') %>
+
+      <button
+        aria-expanded="false"
+        class="nav-toggle"
+        aria-label="Open the menu"
+      ></button>
+    </header>
+
+    <main class="main-grid">
+      <p>404. Page not found.</p>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

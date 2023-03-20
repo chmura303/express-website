@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+
+  <body>
+    <header class="header flex">
+      <div class="logo flex ff-decorative fs-700 fw-700">
+        <a href="/">
+          <img src="./images/logo.png" alt="sonic hedgehog logo" />
+        </a>
+        <p class="logo-title">SonicHedgehog</p>
+      </div>
+
+      <%- include('./partials/nav.ejs') %>
+
+      <button
+        aria-expanded="false"
+        class="nav-toggle"
+        aria-label="Open the menu"
+      ></button>
+    </header>
+
+    <main class="main-grid">
+      <article class="zero article bg-light-100 text">
+        <a href="./article-mind-test">
+          <div>
+            <img
+              src="./images/small-test.jpg"
+              alt="psychological test with ink spilled on a sheet of paper"
+            />
+          </div>
+          <div>
+            <p>Space</p>
+            <h2>
+              Controversial psychology tests are often still used in US courts
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus quaerat temporibus, ipsa nihil, veritatis eligendi
+              id, velit eaque quo ipsam praesentium iure ea eveniet quas. Alias
+              molestias mollitia sequi consequatur!
+            </p>
+          </div>
+        </a>
+      </article>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

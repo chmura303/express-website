@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+
+  <body>
+    <header class="header flex">
+      <div class="logo flex ff-decorative fs-700 fw-700">
+        <a href="/">
+          <img src="./images/logo.png" alt="sonic hedgehog logo" />
+        </a>
+        <p class="logo-title">SonicHedgehog</p>
+      </div>
+
+      <%- include('./partials/nav.ejs') %>
+
+      <button
+        aria-expanded="false"
+        class="nav-toggle"
+        aria-label="Open the menu"
+      ></button>
+    </header>
+
+    <main class="main-grid">
+      <article class="zero article bg-light-200 text-dark-800">
+        <h1 class="fs-700">
+          The moon may be made of magma that once covered Earth’s entire surface
+        </h1>
+        <p class="subhead fw-700 fs-500">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quae
+          facilis animi doloribus omnis, similique voluptas, eos asperiores
+          perferendis vitae distinctio. Non nobis, natus voluptatibus at officia
+          voluptatum tempore eligendi earum doloremque optio enim deleniti
+          dolores quasi dicta rem eum magni quo possimus consectetur quam amet
+          suscipit atque veritatis? Similique totam neque, beatae delectus amet
+          blanditiis, alias itaque pariatur earum, ducimus veniam.
+        </p>
+
+        <img
+          class="large-photo"
+          src="./images/large-moon.jpg"
+          alt="half moon visible in the night sky"
+        />
+        <figcaption class="figcaption fs-300">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <span class="fs-200">Redmond Durrell/Alamy</span>
+        </figcaption>
+
+        <div class="author flex fw-700">
+          <img
+            class="author-photo"
+            src="./images/article-face-02.jpg"
+            alt="Robert Klemenson"
+          />
+          <p>By Robert Klemenson</p>
+        </div>
+
+        <p class="date">March 5, 2023</p>
+        <br />
+
+        <p class="first-line">
+          Rorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus quam reiciendis voluptatum tempore, aliquid numquam
+          perferendis modi provident velit, obcaecati molestiae?
+        </p>
+        <p>
+          Incidunt numquam corporis asperiores adipisci et ratione in deserunt
+          quaerat architecto pariatur beatae distinctio nemo, magnam expedita
+          perferendis amet omnis iure sint, totam placeat, quas porro ad esse
+          qui.
+        </p>
+        <p>
+          Soluta <a href="#">autem sunt dolore</a> quia velit ad dolores at hic
+          perspiciatis. Quia tempora architecto molestias fugiat expedita qui
+          eum.
+        </p>
+        <p>
+          Soluta dicta voluptates quidem molestiae saepe suscipit laboriosam
+          ratione magnam voluptate sit quas neque unde, nisi dignissimos et
+          laborum!
+        </p>
+        <p>
+          Eligendi beatae dolorum <a href="">repellat</a> molestias at,
+          voluptates labore aliquid neque alias numquam a magnam unde quos
+          asperiores consequuntur excepturi iste tempore qui officiis.
+        </p>
+
+        <div class="quotation flex">
+          <img class="quotation-mark" src="./images/quote.png" alt="" />
+          <p class="fs-700 ff-decorative fw-700">
+            It’s not impossible that there should be a magma ocean
+          </p>
+        </div>
+        <p>
+          Officiis quod excepturi inventore maxime recusandae quas doloribus
+          quibusdam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+          repudiandae in est omnis error, nihil fugiat incidunt excepturi
+          provident quia laudantium, nulla, cum possimus aperiam unde beatae
+          voluptatibus <a href="">libero necessitatibus</a>!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          aspernatur, incidunt sunt odio dolorem ex ab! Facere impedit magnam
+          harum commodi blanditiis consequatur voluptatem ut. Amet error maxime
+          corporis illum.
+        </p>
+        <p>
+          Eligendi beatae dolorum repellat molestias at, voluptates labore
+          aliquid neque alias numquam a magnam unde quos asperiores consequuntur
+          excepturi iste tempore qui officiis.
+        </p>
+        <p>
+          Officiis quod excepturi inventore maxime recusandae quas doloribus
+          quibusdam. &#9632;
+        </p>
+        <p class="about-author fs-300">
+          Robert Klemenson covers the section of space for The Science News.
+        </p>
+        <hr class="hr-double-01" />
+      </article>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

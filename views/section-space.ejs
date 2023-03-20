@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+
+  <body>
+    <header class="header flex">
+      <div class="logo flex ff-decorative fs-700 fw-700">
+        <a href="/">
+          <img src="./images/logo.png" alt="sonic hedgehog logo" />
+        </a>
+        <p class="logo-title">SonicHedgehog</p>
+      </div>
+
+      <%- include('./partials/nav.ejs') %>
+
+      <button
+        aria-expanded="false"
+        class="nav-toggle"
+        aria-label="Open the menu"
+      ></button>
+    </header>
+
+    <main class="main-grid">
+      <article class="zero article bg-light-100 text">
+        <a href="./article-space-rocket">
+          <div>
+            <img
+              src="./images/small-rocket.jpg"
+              alt="rocket during its lift off"
+            />
+          </div>
+          <div>
+            <p>Space</p>
+            <h2>
+              New Japanese Rocket Is Destroyed During First Test Flight to Space
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              officia exercitationem, quia ducimus consectetur iusto reiciendis,
+              hic optio similique eos voluptate culpa consequatur.
+            </p>
+          </div>
+        </a>
+      </article>
+
+      <article class="one article bg-light-100">
+        <a href="./article-space-moon">
+          <div>
+            <img
+              src="./images/small-moon.jpg"
+              alt="half moon visible in the night sky"
+            />
+          </div>
+          <div>
+            <p>Space</p>
+            <h2>
+              The moon may be made of magma that once covered Earth’s entire
+              surface
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quae
+              facilis animi doloribus omnis, similique voluptas, eos asperiores
+              perferendis vitae distinctio. Non nobis, natus voluptatibus at
+              officia voluptatum tempore eligendi earum.
+            </p>
+          </div>
+        </a>
+      </article>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

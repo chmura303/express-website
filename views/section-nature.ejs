@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+
+  <body>
+    <header class="header flex">
+      <div class="logo flex ff-decorative fs-700 fw-700">
+        <a href="/">
+          <img src="./images/logo.png" alt="sonic hedgehog logo" />
+        </a>
+        <p class="logo-title">SonicHedgehog</p>
+      </div>
+
+      <%- include('./partials/nav.ejs') %>
+
+      <button
+        aria-expanded="false"
+        class="nav-toggle"
+        aria-label="Open the menu"
+      ></button>
+    </header>
+
+    <main class="main-grid">
+      <article class="zero article bg-light-100 text">
+        <a href="./article-nature-killer-whale">
+          <div>
+            <img
+              src="./images/small-killer-whale.jpg"
+              alt="killer whale swimming together with its baby"
+            />
+          </div>
+          <div>
+            <p>Nature</p>
+            <h2>How killer whales are like people</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut nobis
+              minima odit quibusdam ducimus inventore culpa maiores eius rem
+              sit! Accusantium ex praesentium esse sequi sit unde dolorum error
+              dolores. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </a>
+      </article>
+
+      <article class="one article bg-light-100">
+        <a href="./article-nature-cat">
+          <div>
+            <img
+              src="./images/small-cat.jpg"
+              alt="fluffy cat staring directly at you"
+            />
+          </div>
+          <div>
+            <p>Nature</p>
+            <h2>
+              The truth about cats' domestication and why they really quite like
+              us
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
+              perferendis hic ipsum cupiditate, voluptatum, rerum vero enim
+              aliquam facilis expedita corporis ipsam eius recusandae sapiente
+              perspiciatis! Dignissimos repudiandae qui corporis.
+            </p>
+          </div>
+        </a>
+      </article>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

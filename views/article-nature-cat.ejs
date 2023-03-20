@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+
+  <body>
+    <header class="header flex">
+      <div class="logo flex ff-decorative fs-700 fw-700">
+        <a href="/">
+          <img src="./images/logo.png" alt="sonic hedgehog logo" />
+        </a>
+        <p class="logo-title">SonicHedgehog</p>
+      </div>
+
+      <%- include('./partials/nav.ejs') %>
+
+      <button
+        aria-expanded="false"
+        class="nav-toggle"
+        aria-label="Open the menu"
+      ></button>
+    </header>
+
+    <main class="main-grid">
+      <article class="zero article bg-light-200 text-dark-800">
+        <h1 class="fs-700">
+          The truth about cats' domestication and why they really quite like us
+        </h1>
+        <p class="subhead fw-700 fs-500">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
+          perferendis hic ipsum cupiditate, voluptatum, rerum vero enim aliquam
+          facilis expedita corporis ipsam eius recusandae sapiente perspiciatis!
+          Dignissimos repudiandae qui corporis.
+        </p>
+
+        <img
+          class="large-photo"
+          src="./images/large-cat.jpg"
+          alt="fluffy cat staring directly at you"
+        />
+        <figcaption class="figcaption fs-300">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <span class="fs-200">Redmond Durrell/Alamy</span>
+        </figcaption>
+
+        <div class="author flex fw-700">
+          <img
+            class="author-photo"
+            src="./images/article-face-01.jpg"
+            alt="Kate Middleborough"
+          />
+          <p>By Kate Middleborough</p>
+        </div>
+
+        <p class="date">January 16, 2023</p>
+        <br />
+
+        <p class="first-line">
+          Rorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus quam reiciendis voluptatum tempore, aliquid numquam
+          perferendis modi provident velit, obcaecati molestiae?
+        </p>
+        <p>
+          Incidunt numquam corporis asperiores adipisci et ratione in deserunt
+          quaerat architecto pariatur beatae distinctio nemo, magnam expedita
+          perferendis amet omnis iure sint, totam placeat, quas porro ad esse
+          qui.
+        </p>
+        <p>
+          Soluta <a href="#">autem sunt dolore</a> quia velit ad dolores at hic
+          perspiciatis. Quia tempora architecto molestias fugiat expedita qui
+          eum.
+        </p>
+        <p>
+          Soluta dicta voluptates quidem molestiae saepe suscipit laboriosam
+          ratione magnam voluptate sit quas neque unde, nisi dignissimos et
+          laborum!
+        </p>
+        <p>
+          Eligendi beatae dolorum <a href="">repellat</a> molestias at,
+          voluptates labore aliquid neque alias numquam a magnam unde quos
+          asperiores consequuntur excepturi iste tempore qui officiis.
+        </p>
+
+        <div class="quotation flex">
+          <img class="quotation-mark" src="./images/quote.png" alt="" />
+          <p class="fs-700 ff-decorative fw-700">
+            Cats are more attuned to familiar humans than we realise
+          </p>
+        </div>
+        <p>
+          Officiis quod excepturi inventore maxime recusandae quas doloribus
+          quibusdam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+          repudiandae in est omnis error, nihil fugiat incidunt excepturi
+          provident quia laudantium, nulla, cum possimus aperiam unde beatae
+          voluptatibus <a href="">libero necessitatibus</a>!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          aspernatur, incidunt sunt odio dolorem ex ab! Facere impedit magnam
+          harum commodi blanditiis consequatur voluptatem ut. Amet error maxime
+          corporis illum.
+        </p>
+        <p>
+          Eligendi beatae dolorum repellat molestias at, voluptates labore
+          aliquid neque alias numquam a magnam unde quos asperiores consequuntur
+          excepturi iste tempore qui officiis.
+        </p>
+        <p>
+          Officiis quod excepturi inventore maxime recusandae quas doloribus
+          quibusdam. &#9632;
+        </p>
+        <p class="about-author fs-300">
+          Kate Midlleborough covers the section of nature and mind for The
+          Science News.
+        </p>
+        <hr class="hr-double-01" />
+      </article>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
